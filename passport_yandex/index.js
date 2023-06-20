@@ -10,7 +10,8 @@ const YandexStrategy = require('passport-yandex').Strategy;
 app.use(session({ secret: "supersecret", resave: true, saveUninitialized: true }));
 
 let Users = [{'login': 'admin', 'email':'Aks-fam@yandex.ru'},
-            {'login': 'local_js_god', 'email':'ilia-gossoudarev@yandex.ru'}];
+            {'login': 'local_js_god', 'email':'ilia-gossoudarev@yandex.ru'},
+    {'login': 'test_admin', 'email': 'tanyatarinsk@gmail.com'}];
 
 const findUserByLogin = (login) => {
     return Users.find((element)=> {
